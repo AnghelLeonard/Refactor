@@ -36,16 +36,16 @@ public class RemoveFromList {
         }         
         System.out.println("Took (iterator): " 
                 + (double)(System.nanoTime() - startA)/ 1_000_000_000.0 + " s");
-        System.out.println("Took (iterator): " 
-                + (double)(System.nanoTime() - startA)/ 1_000_000.0 + " ms");
+        // System.out.println("Took (iterator): " 
+        //      + (double)(System.nanoTime() - startA)/ 1_000_000.0 + " ms");
         
         long startB = System.nanoTime();        
         productsB.removeIf((p) -> p.getPrice() > 500);
         
         System.out.println("Took (removeIf): " 
                 + (double)(System.nanoTime() - startB)/ 1_000_000_000.0 + " s");
-        System.out.println("Took (removeIf): " 
-                + (double)(System.nanoTime() - startB)/ 1_000_000.0 + " ms");
+        // System.out.println("Took (removeIf): " 
+        //      + (double)(System.nanoTime() - startB)/ 1_000_000.0 + " ms");
 
     }
 
